@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div  class="hero">
+            <div class="logo">
+                <img src="profile-pic.jpg" alt="" srcset="">
+            </div>
+            <div class="rightnav">
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    Search
+                </div>
+                <div class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                    Menu
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="profile-pic.jpg" alt="Abdullah Al Mueen">
+            </div>
+            <div class="about-text">
+                <h3>Hello, I'm Abdullah Al Mueen</h3>
+                <p>I am a final-year Computer Science Engineering student at Daffodil International University with a strong passion for web development and modern technologies. Throughout my academic journey, I have developed solid skills in HTML, CSS, JavaScript, and frameworks such as React.
+                </p>
+                <p>Driven by curiosity and a love for problem-solving, I have worked on various academic and personal projects that reflect my dedication to building responsive and user-friendly web applications. I am constantly seeking opportunities to learn and grow in the ever-evolving tech industry.
+                </p>
+                <p>When I'm not coding, you can find me reading books, traveling, or exploring new technologies. I believe in continuous learning and always strive to improve my skills.</p>
+                <div class="skills">
+                    <h4>My Skills:</h4>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                        <li>React, Angular</li>
+                        <li>Node.js</li>
+                        <li>MySQL, MongoDB</li>
+                        <li>Git, GitHub</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn">Contact Me</a>
+                <a href="/Abdullah Al Mueen.pdf" download  class="btn">Download CV</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="portfolio">
+        <h2 class="section-title">My Portfolio</h2>
+        <div class="portfolio-tabs">
+            <a href="#web" class="btn" style="margin-top: 20px;">Web Projects</a>
+        </div>
+
+        <div class="tab-content active" id="web">
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="marrige.png" alt="Project 1">
+                    </div>
+                    <div class="portfolio-info">
+                         <h3>Matrimonial Biodata</h3>
+        		<p>A dynamic form for biodata collection, built using HTML, CSS, and JS.</p>
+        		<a href="https://mu333n.github.io/Marrige-Biodata/" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="calculator.jpg" alt="Project 2">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>JS Calculator</h3>
+        		<p>Responsive calculator that handles basic arithmetic operations with clean UI.</p>
+        		<a href="https://mu333n.github.io/calculator/"  class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="daraz.svg" alt="Project 3">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Daraz</h3>
+        		<p>Daraz by mueen</p>
+        		<a href="https://mu333n.github.io/Daraz/"  class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+    <section class="container" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-me">
+            <div class="contact-from-area">
+                <div class="get-in-touch">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Savar, Dhaka, Bangladesh</p>
+                    <p onclick="window.location.href='mailto:139mueen1@gmail.com'" style="cursor: pointer;"><i
+                            class="fas fa-envelope"></i> 139mueen1@gmail.com</p>
+                    <p onclick="window.location.href='tel:+8801303873241'" style="cursor: pointer;"><i
+                            class="fas fa-phone"></i> +8801303873241</p>
+                </div>
+                <div class="message-area">
+                    <h3>Send a Message</h3>
+
+                    <form onsubmit="sendEmail(); return false;">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <footer>
+            <div class="l-container">
+                <h2>Connect With Me</h2>
+                <p>Follow me on social media or reach out directly to discuss potential collaborations.</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.facebook.com/" target="_blank"><i
+                            class="fab fa-facebook-f"></i>Facebook</a>
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i>LinkedIn</a>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram"></i>Instagram</a>
+                    <a href="https://wa.me/" target="_blank">
+                        <i class="fab fa-whatsapp"></i>WhatsApp
+                    </a>
+                </div>
+                
+                <p style="margin-top: 30px; color: var(--harvard-cool-gray);">&copy; Abdullah Al Mueen</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
